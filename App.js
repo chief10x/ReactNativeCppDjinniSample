@@ -29,7 +29,7 @@ export default class App extends React.Component {
       const message = await StringMessage.newMessage()
 
       this.setState({
-        message
+        message: message != null ? message : ""
       })
     } catch(error) {      
       alert('An error happened')
