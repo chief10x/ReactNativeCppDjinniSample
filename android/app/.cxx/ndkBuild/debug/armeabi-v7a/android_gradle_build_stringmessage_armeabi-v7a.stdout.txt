@@ -1,0 +1,5 @@
+[armeabi-v7a] Compile++ thumb: stringmessage <= NativeStringMessage.cpp
+[armeabi-v7a] Compile++ thumb: stringmessage <= string_message_impl.cpp
+[armeabi-v7a] Compile++ thumb: stringmessage <= djinni_main.cpp
+[armeabi-v7a] Compile++ thumb: stringmessage <= djinni_support.cpp
+[armeabi-v7a] SharedLibrary  : libstringmessage.so

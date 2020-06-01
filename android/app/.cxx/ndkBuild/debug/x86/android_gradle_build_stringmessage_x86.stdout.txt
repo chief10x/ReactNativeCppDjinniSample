@@ -1,0 +1,5 @@
+[x86] Compile++      : stringmessage <= NativeStringMessage.cpp
+[x86] Compile++      : stringmessage <= string_message_impl.cpp
+[x86] Compile++      : stringmessage <= djinni_main.cpp
+[x86] Compile++      : stringmessage <= djinni_support.cpp
+[x86] SharedLibrary  : libstringmessage.so

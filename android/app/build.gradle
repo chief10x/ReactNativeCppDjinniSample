@@ -136,7 +136,32 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+            moduleName "helloworld"
+            ldLibs "log"
+        }
     }
+
+    sourceSets {
+
+        main {
+
+            // first our new Java code
+            java.srcDirs = ["../../djinni/java", "src/main/java"]
+            // second our JNI classes
+            jni.srcDirs = ["../../djinni/jni"]
+        }
+    }
+
+    externalNativeBuild {
+        // This points ndk-build at our Android.mk file
+        ndkBuild {
+            path file('src/main/jni/Android.mk')
+        }
+    }
+
     splits {
         abi {
             reset()
@@ -145,6 +170,7 @@ android {
             include "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
         }
     }
+
     signingConfigs {
         debug {
             storeFile file('debug.keystore')
@@ -153,6 +179,7 @@ android {
             keyPassword 'android'
         }
     }
+
     buildTypes {
         debug {
             signingConfig signingConfigs.debug

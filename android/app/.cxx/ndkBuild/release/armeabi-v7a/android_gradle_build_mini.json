@@ -1,0 +1,18 @@
+{
+  "buildFiles": [
+    "/Users/applebaz/Documents/ReactNativeProjects/ReactCPPBridgeSample/ReactCPPBridge/android/app/src/main/jni/Android.mk",
+    "/Users/applebaz/Documents/ReactNativeProjects/ReactCPPBridgeSample/ReactCPPBridge/android/app/src/main/jni/Application.mk"
+  ],
+  "cleanCommands": [
+    "/Users/applebaz/Library/Android/sdk/ndk/21.2.6472646/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/applebaz/Documents/ReactNativeProjects/ReactCPPBridgeSample/ReactCPPBridge/android/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/applebaz/Documents/ReactNativeProjects/ReactCPPBridgeSample/ReactCPPBridge/android/app/src/main/jni/Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/applebaz/Documents/ReactNativeProjects/ReactCPPBridgeSample/ReactCPPBridge/android/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/applebaz/Documents/ReactNativeProjects/ReactCPPBridgeSample/ReactCPPBridge/android/app/build/intermediates/ndkBuild/release/lib clean"
+  ],
+  "buildTargetsCommand": "/Users/applebaz/Library/Android/sdk/ndk/21.2.6472646/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/applebaz/Documents/ReactNativeProjects/ReactCPPBridgeSample/ReactCPPBridge/android/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/applebaz/Documents/ReactNativeProjects/ReactCPPBridgeSample/ReactCPPBridge/android/app/src/main/jni/Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/applebaz/Documents/ReactNativeProjects/ReactCPPBridgeSample/ReactCPPBridge/android/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/applebaz/Documents/ReactNativeProjects/ReactCPPBridgeSample/ReactCPPBridge/android/app/build/intermediates/ndkBuild/release/lib {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "stringmessage-release-armeabi-v7a": {
+      "artifactName": "stringmessage",
+      "buildCommand": "/Users/applebaz/Library/Android/sdk/ndk/21.2.6472646/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/applebaz/Documents/ReactNativeProjects/ReactCPPBridgeSample/ReactCPPBridge/android/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/applebaz/Documents/ReactNativeProjects/ReactCPPBridgeSample/ReactCPPBridge/android/app/src/main/jni/Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/applebaz/Documents/ReactNativeProjects/ReactCPPBridgeSample/ReactCPPBridge/android/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/applebaz/Documents/ReactNativeProjects/ReactCPPBridgeSample/ReactCPPBridge/android/app/build/intermediates/ndkBuild/release/lib /Users/applebaz/Documents/ReactNativeProjects/ReactCPPBridgeSample/ReactCPPBridge/android/app/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libstringmessage.so",
+      "abi": "armeabi-v7a",
+      "output": "/Users/applebaz/Documents/ReactNativeProjects/ReactCPPBridgeSample/ReactCPPBridge/android/app/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libstringmessage.so"
+    }
+  }
+}
