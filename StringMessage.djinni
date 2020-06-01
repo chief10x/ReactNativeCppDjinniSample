@@ -1,0 +1,4 @@
+string_message = interface +c {
+  static create(): string_message;
+  get_string_message(): string;
+}

@@ -13,6 +13,10 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		278145B52484219A0016E7A2 /* RCTStringMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 278145B42484219A0016E7A2 /* RCTStringMessage.m */; };
+		27960F052485672C00976198 /* SMStringMessage+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27960F032485672C00976198 /* SMStringMessage+Private.mm */; };
+		27960F10248567F500976198 /* DJIError.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27960F0D248567F500976198 /* DJIError.mm */; };
+		27960F11248567F500976198 /* DJIProxyCaches.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27960F0F248567F500976198 /* DJIProxyCaches.mm */; };
+		27960F142485680C00976198 /* string_message_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27960F122485680C00976198 /* string_message_impl.cpp */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -57,6 +61,18 @@
 		1F9C6494183D8A29A7F5A101 /* Pods-ReactCPPBridge-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactCPPBridge-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactCPPBridge-tvOSTests/Pods-ReactCPPBridge-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		278145B3248421610016E7A2 /* RCTStringMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTStringMessage.h; sourceTree = "<group>"; };
 		278145B42484219A0016E7A2 /* RCTStringMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTStringMessage.m; sourceTree = "<group>"; };
+		27960F022485672C00976198 /* SMStringMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMStringMessage.h; path = ../djinni/objc/SMStringMessage.h; sourceTree = "<group>"; };
+		27960F032485672C00976198 /* SMStringMessage+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "SMStringMessage+Private.mm"; path = "../djinni/objc/SMStringMessage+Private.mm"; sourceTree = "<group>"; };
+		27960F042485672C00976198 /* SMStringMessage+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SMStringMessage+Private.h"; path = "../djinni/objc/SMStringMessage+Private.h"; sourceTree = "<group>"; };
+		27960F072485679800976198 /* string_message.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = string_message.hpp; path = ../djinni/cpp/string_message.hpp; sourceTree = "<group>"; };
+		27960F0A248567F500976198 /* DJICppWrapperCache+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DJICppWrapperCache+Private.h"; path = "../node_modules/djinni/support-lib/objc/DJICppWrapperCache+Private.h"; sourceTree = "<group>"; };
+		27960F0B248567F500976198 /* DJIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DJIError.h; path = "../node_modules/djinni/support-lib/objc/DJIError.h"; sourceTree = "<group>"; };
+		27960F0C248567F500976198 /* DJIObjcWrapperCache+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DJIObjcWrapperCache+Private.h"; path = "../node_modules/djinni/support-lib/objc/DJIObjcWrapperCache+Private.h"; sourceTree = "<group>"; };
+		27960F0D248567F500976198 /* DJIError.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DJIError.mm; path = "../node_modules/djinni/support-lib/objc/DJIError.mm"; sourceTree = "<group>"; };
+		27960F0E248567F500976198 /* DJIMarshal+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DJIMarshal+Private.h"; path = "../node_modules/djinni/support-lib/objc/DJIMarshal+Private.h"; sourceTree = "<group>"; };
+		27960F0F248567F500976198 /* DJIProxyCaches.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DJIProxyCaches.mm; path = "../node_modules/djinni/support-lib/objc/DJIProxyCaches.mm"; sourceTree = "<group>"; };
+		27960F122485680C00976198 /* string_message_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = string_message_impl.cpp; path = ../src/cpp/string_message_impl.cpp; sourceTree = "<group>"; };
+		27960F132485680C00976198 /* string_message_impl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = string_message_impl.hpp; path = ../src/cpp/string_message_impl.hpp; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* ReactCPPBridge-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactCPPBridge-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* ReactCPPBridge-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactCPPBridge-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A2AACA248D21CEA240D1257 /* libPods-ReactCPPBridge-ReactCPPBridgeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactCPPBridge-ReactCPPBridgeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +144,9 @@
 		13B07FAE1A68108700A75B9A /* ReactCPPBridge */ = {
 			isa = PBXGroup;
 			children = (
+				27960F012485663000976198 /* CppSrc */,
+				27960F002485662A00976198 /* Djinni */,
+				27960EFF2485661000976198 /* ObjCBridge */,
 				278145B2248421360016E7A2 /* ReactBridges */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -147,6 +166,39 @@
 				278145B42484219A0016E7A2 /* RCTStringMessage.m */,
 			);
 			name = ReactBridges;
+			sourceTree = "<group>";
+		};
+		27960EFF2485661000976198 /* ObjCBridge */ = {
+			isa = PBXGroup;
+			children = (
+				27960F072485679800976198 /* string_message.hpp */,
+				27960F022485672C00976198 /* SMStringMessage.h */,
+				27960F042485672C00976198 /* SMStringMessage+Private.h */,
+				27960F032485672C00976198 /* SMStringMessage+Private.mm */,
+			);
+			name = ObjCBridge;
+			sourceTree = "<group>";
+		};
+		27960F002485662A00976198 /* Djinni */ = {
+			isa = PBXGroup;
+			children = (
+				27960F0A248567F500976198 /* DJICppWrapperCache+Private.h */,
+				27960F0B248567F500976198 /* DJIError.h */,
+				27960F0D248567F500976198 /* DJIError.mm */,
+				27960F0E248567F500976198 /* DJIMarshal+Private.h */,
+				27960F0C248567F500976198 /* DJIObjcWrapperCache+Private.h */,
+				27960F0F248567F500976198 /* DJIProxyCaches.mm */,
+			);
+			name = Djinni;
+			sourceTree = "<group>";
+		};
+		27960F012485663000976198 /* CppSrc */ = {
+			isa = PBXGroup;
+			children = (
+				27960F122485680C00976198 /* string_message_impl.cpp */,
+				27960F132485680C00976198 /* string_message_impl.hpp */,
+			);
+			name = CppSrc;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -542,9 +594,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27960F052485672C00976198 /* SMStringMessage+Private.mm in Sources */,
+				27960F10248567F500976198 /* DJIError.mm in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				278145B52484219A0016E7A2 /* RCTStringMessage.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				27960F11248567F500976198 /* DJIProxyCaches.mm in Sources */,
+				27960F142485680C00976198 /* string_message_impl.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

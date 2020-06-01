@@ -1,6 +1,21 @@
 #import "RCTStringMessage.h"
+#import "SMStringMessage.h"
 
-@implementation RCTStringMessage
+@implementation RCTStringMessage {
+  SMStringMessage *_cppApi;
+}
+
+- (RCTStringMessage *)init {
+  
+  self = [super init];
+  _cppApi = [SMStringMessage create];
+  return self;
+}
+
++ (BOOL)requiresMainQueueSetup {
+  
+  return NO;
+}
 
 RCT_EXPORT_MODULE();
 
@@ -8,6 +23,9 @@ RCT_REMAP_METHOD(newMessage,
                  resolver:(RCTPromiseResolveBlock)resolve
                  rejecter:(RCTPromiseRejectBlock)reject)
 {
-  resolve(@"Cazzo For real!");
+  
+  NSString *response = [_cppApi getStringMessage];
+  
+  resolve(response);
 }
 @end
