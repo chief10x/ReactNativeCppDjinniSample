@@ -25,16 +25,12 @@ export default class App extends React.Component {
 
   async componentDidMount() {
 
-    try {
-      const message = await StringMessage.newMessage()
-
-      this.setState({
-        message: message != null ? message : ""
-      })
-    } catch(error) {      
-      alert('An error happened')
-      console.log(error);      
-    }
+    StringMessage.newMessage()
+      .then( message => 
+        this.setState({
+          message
+        }))
+      .catch( error => console.log(error) )
   }
 
   render() {
